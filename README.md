@@ -50,6 +50,11 @@ prediction arrays), these scripts regenerate the paper's headline numbers:
 The champion reproduces exactly from its saved probability array and to correlation 0.998
 when recomputed end-to-end from the feature code and saved models.
 
+The exact-from-array numbers regenerate using only the public prediction arrays and labels.
+The raw-code regeneration path (correlation 0.998) additionally requires the feature
+pipeline, split construction, and model artifacts from the main public repository:
+https://github.com/ihlamury/phbench
+
 ## Requirements
 
 Python 3.11+, with `scikit-learn`, `xgboost`, `lightgbm`, `numpy`, `pandas`. The Gemini
